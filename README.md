@@ -1,4 +1,4 @@
-# engineeringtrainingcenter
+# 工程训练中心信息化平台
 
 ## Project setup
 ```
@@ -23,7 +23,3 @@ yarn run test
 ### Lints and fixes files
 ```
 yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

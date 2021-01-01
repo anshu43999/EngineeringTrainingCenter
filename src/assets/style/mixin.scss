@@ -1,0 +1,69 @@
+$nav-bg:#233f42;
+$active-bg: #9ad0b9;
+$btn-bg:#fabb3d;
+$cancel-save-btn:#648da9;
+$common-left: 0.2rem;
+$common-right: 0.6rem;
+
+
+
+// 元素长宽
+@mixin wh($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+// 字体颜色,大小, 水平布局
+@mixin font($size, $color: #333, $text-align: left,$letter-spacing: 2px){
+  font-size: $size;
+  color: $color;
+  text-align: $text-align;
+  letter-spacing : $letter-spacing;
+}
+
+// flex布局
+@mixin flex($justify-content: center, $align-items: center,$direction:row) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-direction: $direction;
+}
+
+// 默认按照父元素的剧中
+@mixin positionCenter($position: absolute) {
+  position: $position;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+
+// 默认按照父元素的剧中
+@mixin positionHCenter($position: absolute) {
+  position: $position;
+  top: 50%;
+  transform: translate3d(0, -50%, 0);
+}
+
+@mixin positionLeft($position: absolute, $left: $common-left) {
+  position: $position;
+  top: 50%;
+  left: $left;
+  transform: translate3d(0, -50%, 0);
+}
+
+@mixin positionRight($position: absolute, $right: $common-right) {
+  position: $position;
+  top: 50%;
+  right: $right;
+  transform: translate3d(0, -50%, 0);
+}
+
+// 默认背景图
+@mixin backgroundImage ($url,$position:center,$size:cover,$repeat:no-repeat,$color:''){
+  background-image: url($url) ;
+  background-position: $position;
+  background-size: $size;
+  background-repeat: $repeat;
+  background-color: $color;
+}

@@ -1,0 +1,184 @@
+{
+  "id": "2300377",
+  "name": "中北大学工程训练中心",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "201683",
+      "name": "用户",
+      "font_class": "user",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "5905920",
+      "name": "环保智库",
+      "font_class": "huanbaozhiku",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "7625693",
+      "name": "邮箱",
+      "font_class": "youxiang",
+      "unicode": "ec8b",
+      "unicode_decimal": 60555
+    },
+    {
+      "icon_id": "9327734",
+      "name": "关机",
+      "font_class": "guanji",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "1409623",
+      "name": "24配置管理",
+      "font_class": "peizhiguanli",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "2734735",
+      "name": "站点配置",
+      "font_class": "zhandianpeizhi",
+      "unicode": "e6a3",
+      "unicode_decimal": 59043
+    },
+    {
+      "icon_id": "7450630",
+      "name": "日志",
+      "font_class": "rizhi",
+      "unicode": "e663",
+      "unicode_decimal": 58979
+    },
+    {
+      "icon_id": "10148983",
+      "name": "接口配置",
+      "font_class": "jiekoupeizhi",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "11808033",
+      "name": "权限",
+      "font_class": "quanxian",
+      "unicode": "e69c",
+      "unicode_decimal": 59036
+    },
+    {
+      "icon_id": "15686587",
+      "name": "日志",
+      "font_class": "rizhi1",
+      "unicode": "e6cc",
+      "unicode_decimal": 59084
+    },
+    {
+      "icon_id": "17606404",
+      "name": "权限",
+      "font_class": "quanxian1",
+      "unicode": "e6b6",
+      "unicode_decimal": 59062
+    },
+    {
+      "icon_id": "98981",
+      "name": "门禁",
+      "font_class": "menjin",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "1287715",
+      "name": "用户",
+      "font_class": "yonghu",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "1695981",
+      "name": "资产",
+      "font_class": "zichan",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "3771591",
+      "name": "侧边栏教务",
+      "font_class": "jiaowu",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "4852653",
+      "name": "教学管理",
+      "font_class": "jiaoxueguanli",
+      "unicode": "e6ad",
+      "unicode_decimal": 59053
+    },
+    {
+      "icon_id": "5373721",
+      "name": "资产",
+      "font_class": "zichan1",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "5522271",
+      "name": "双创政策",
+      "font_class": "shuangchuangzhengce",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "6335477",
+      "name": "用户",
+      "font_class": "yonghu1",
+      "unicode": "e66f",
+      "unicode_decimal": 58991
+    },
+    {
+      "icon_id": "7216974",
+      "name": "实验室分析数据录入",
+      "font_class": "shiyanshifenxishujuluru",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "8289682",
+      "name": "系统管理",
+      "font_class": "xitongguanli",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "8949037",
+      "name": "用户",
+      "font_class": "yonghu2",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    },
+    {
+      "icon_id": "9097237",
+      "name": "关闭",
+      "font_class": "guanbi",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "12026057",
+      "name": "学院",
+      "font_class": "xueyuan",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "18252487",
+      "name": "用户",
+      "font_class": "yonghu11",
+      "unicode": "e6ba",
+      "unicode_decimal": 59066
+    }
+  ]
+}
