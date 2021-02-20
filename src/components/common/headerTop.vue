@@ -2,19 +2,20 @@
 <template>
 <div class='header'>
     <div class="header-left">
-        <i class="iconfont iconhuanbaozhiku"></i>
-        <span>污染场地治理决策系统</span>
+<!--        <i class="iconfont iconhuanbaozhiku"></i>-->
+        <img src="../../assets/image/common/logo.png">
+        <span>工程训练中心信息化平台</span>
     </div>
 
-    <ul class="header-center">
-        <li>系统管理</li>
-        <li>中心管理</li>
-        <li>资产管理</li>
-        <li>实验室管理</li>
-        <li>教学管理</li>
-        <li>门禁管理</li>
-        <li>双创平台</li>
-    </ul>
+<!--    <ul class="header-center">-->
+<!--        <li>系统管理</li>-->
+<!--        <li>中心管理</li>-->
+<!--        <li>资产管理</li>-->
+<!--        <li>实验室管理</li>-->
+<!--        <li>教学管理</li>-->
+<!--        <li>门禁管理</li>-->
+<!--        <li>双创平台</li>-->
+<!--    </ul>-->
 
     <div class="header-right">
         <div class="user-name" @click="showInfo">
@@ -142,16 +143,24 @@ activated() {}, //如果页面有keep-alive缓存功能，这个函数会触发
     position: relative;
     @include flex(space-between);
     @include wh(100%,50px);
-    background-color: rgba(70, 76, 91, 1);
+    //background-color: rgba(70, 76, 91, 1);
+  background-color: #FAFAFC;
+  box-shadow: 0px 1px 4px 0px 
+		rgba(43, 57, 128, 0.19);
     .header-left{
-        @include wh(287px,50px);
+        @include wh(316px,50px);
         @include flex();
         i{
-            @include font(28px,#ffffff);
+            @include font(20px,#ffffff);
             margin-right: 16px;
         }
+      img{
+        //@include wh(36px,35px);
+        margin-right: 18px;
+      }
         span{
-            @include font(20px,#ffffff,left,2px)
+            @include font(20px,#1c6dd6,left,2px);
+          font-weight: bold;
         }
     }
     .header-center{
@@ -167,9 +176,10 @@ activated() {}, //如果页面有keep-alive缓存功能，这个函数会触发
         @include flex();
         .user-name{
             flex: 1;
-            color: #ffffff;
+            color: #999999;
             i{
-                margin-right:21px; 
+                margin-right:21px;
+                color: #999999;
             }
         }
         i{
@@ -178,9 +188,11 @@ activated() {}, //如果页面有keep-alive缓存功能，这个函数会触发
         }
         .msg{
             margin: 0 20px;
+          color: #7ED3FA;
         }
         .edit{
             margin: 0 41px 0 17px;
+          color: #FFAD1F;
         }
         b{
             @include wh(1px,24px);

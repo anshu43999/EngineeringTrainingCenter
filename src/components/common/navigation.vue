@@ -11,7 +11,7 @@
     <div class="navigationRight">
         <div class="rightTitle">{{leftNav[activeIndex]['title']}}</div>
         <ul class="rightMenu">
-            <li v-for="(item,index) in leftNav[activeIndex]['menu']" :key="index">
+            <li :class="secondIndex===index? 'active':''" v-for="(item,index) in leftNav[activeIndex]['menu']" :key="index" @click="skip(item.path)">
                 {{item['name']}}
             </li>
         </ul>
@@ -30,40 +30,37 @@ components: {},
 data() {
 //这里存放数据
 return {
+    // 一级active
     activeIndex : 0,
+    // 二级active
+    secondIndex : 0,
     leftNav:[
         {
             //线图标
-            line : 'iconyonghu1',
+            line : 'iconshouye1',
             // 面图标
-            flour : 'iconyonghu2',  
+            flour : 'iconshouye-shi',  
             // 子集菜单标题
-            title : '用户管理',
+            title : '首页',
             menu : [
                 {
-                    path : '',
-                    name : '教师用户'
+                    path : '/entrance/scPlatform/index',
+                    name : '首页'
                 },
-                {
-                    path : '',
-                    name : '学生用户'
-                },
+               
             ]
 
         },
         {
             line : 'iconquanxian1',
             flour : 'iconquanxian' ,
-            title : '角色管理',
+            title : '平台管理',
             menu : [
                 {
-                    path : '',
-                    name : '系统管理员'
+                    path : '/entrance/scPlatform/platformMange',
+                    name : '平台列表'
                 },
-                {
-                    path : '',
-                    name : '配置管理员'
-                },
+               
             ]
 
         },
@@ -105,6 +102,11 @@ methods: {
     cutNav(){
         console.log('move')
     },
+    skip(path){
+        console.log(path);
+        this.$router.push({path :path})
+
+    }
     
 
 },
@@ -134,9 +136,12 @@ activated() {}, //如果页面有keep-alive缓存功能，这个函数会触发
     border-right: 1px solid rgba(238, 238, 238, 1);
     @include flex(just-content);
     .navigationLeft{
+      padding-top:67px ;
         @include wh(50px,100%);
         background: linear-gradient(180deg, rgba(10, 189, 222, 1) 0%, rgba(10, 189, 222, 1) 0%, rgba(13, 181, 228, 1) 79%, rgba(19, 160, 239, 1) 91%, rgba(24, 144, 254, 1) 100%, rgba(24, 144, 254, 1) 100%);
-        
+        li{
+          margin-bottom: 21px;
+        }
         .active{
             background-color: rgba(6, 151, 180, 1);
             .line{
@@ -181,9 +186,24 @@ activated() {}, //如果页面有keep-alive缓存功能，这个函数会触发
             height: 48px;
             line-height: 48px;
             background-color: #F9F9F9;
+          @include font(14px,#a6a6a6,center)
         }
         .rightMenu{
             @include wh(100%,calc( 100% - 48px ));
+          padding-top: 32px;
+          @include font(14px,#409eff,center);
+
+          li{
+            height: 36px;
+            line-height: 36px;
+            cursor: pointer;
+            border-right: 2px solid #ffffff;
+          }
+          .active{
+              background-color: #ECF5FF;
+              border-right: 2px solid #409eff;
+               
+          }
 
         }
     }

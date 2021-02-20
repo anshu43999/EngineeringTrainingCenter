@@ -45,7 +45,10 @@ activated() {}, //如果页面有keep-alive缓存功能，这个函数会触发
 <style lang='scss' scoped>
 .breadCrumb{
     width: 100%;
-    height: 36px;
+    height: 48px;
     background-color: rgba(242, 242, 242, 1);
+    border-bottom: 1px solid #D7D8DC;
+    box-shadow: 0px 1px 1px 0px 
+		rgba(0, 0, 0, 0.14);
 }
 </style>

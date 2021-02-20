@@ -83,7 +83,8 @@ activated() {}, //如果页面有keep-alive缓存功能，这个函数会触发
             flex: 1;
             @include flex(space-between,center,column);
             .main{
-                @include wh(100%,calc(100% - 36px))
+                @include wh(100%,calc(100% - 48px));
+                background-color: #F1F2F6;
             }
         }
         
