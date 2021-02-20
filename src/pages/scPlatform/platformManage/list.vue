@@ -47,7 +47,7 @@
 
         <el-input v-model="input" placeholder="平台名称/平台负责人"></el-input>
 
-        
+
         <el-select v-model="value" placeholder="所属学院">
             <el-option
             v-for="item in options"
@@ -87,7 +87,7 @@
                 fixed
                 type="selection"
                 width="55">
-                </el-table-column>               
+                </el-table-column>
                 <el-table-column
                     prop="xh"
                     label="序号"
@@ -136,7 +136,7 @@
                     >
                 </el-table-column>
 
-        
+
 
                 <el-table-column
                 fixed="right"
@@ -248,8 +248,10 @@ watch: {},
 methods: {
     addPlatform(){
         this.$router.push({path : 'platformMange/addPlatform'})
-    }
-
+    },
+  handleClick(row){
+    this.$router.push({path:'platformMange/basicPlatformInformation'})
+  }
 },
 //生命周期 - 创建完成（可以访问当前this实例）
 created() {

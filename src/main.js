@@ -6,9 +6,14 @@ import store from './store'
 import '../utils/rem'
 import '../src/assets/style/base.scss'
 import '../src/assets/font/iconfont.css'
+import '../src/assets/font/iconfont.js';
 
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
+
+import echarts from 'echarts';
+
+Vue.prototype.$echarts = echarts
 
 
 

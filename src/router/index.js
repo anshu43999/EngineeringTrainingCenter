@@ -12,7 +12,7 @@ Router.prototype.push = function push(location) {
 
 Vue.use(Router);
 
-const routes = [ 
+const routes = [
     {
         path: '/',
         redirect: '/login',
@@ -49,7 +49,17 @@ const routes = [
                 path : 'platformMange/teatherTeam',
                 name : '平台列表/平台指导教师团队管理',
                 component : ()=>import('../pages/scPlatform/platformManage/teatherTeam')
-            }
+            },
+            {
+                path: 'platformMange/basicPlatformInformation',
+                name:'平台列表/平台信息管理',
+                component : ()=>import('../pages/scPlatform/platformManage/basicPlatformInformation')
+            },
+            {
+                path: 'platformMange/termPlanManagement',
+                name:'平台列表/大数据与人工智能创意设计双创平台/平台学期计划管理',
+                component : ()=>import('../pages/scPlatform/platformManage/termPlanManagement')
+            },
         ]
     },
 ]
