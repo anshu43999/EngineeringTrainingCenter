@@ -1,6 +1,6 @@
 <!-- 平台管理列表 -->
 <template>
-<div class='listWrap'>
+<div class='plalistWrap'>
     <div class="statisticsOne">
         <div class="statisticsMain">
             <div class="leftBg">
@@ -22,7 +22,7 @@
                 <span></span>
                 <span></span>
             </div>
-            <img class="img1" src="../../../assets/image/scPlatform/platformManage/statisticsTop1.png" alt="">
+            <img class="img2" src="../../../assets/image/scPlatform/platformManage/statisticsTop2.png" alt="">
             <div class="rightBg">
                 <h2>32</h2>
                 <h3>平台教师总数</h3>
@@ -35,7 +35,7 @@
                 <span></span>
                 <span></span>
             </div>
-            <img class="img1" src="../../../assets/image/scPlatform/platformManage/statisticsTop1.png" alt="">
+            <img class="img3" src="../../../assets/image/scPlatform/platformManage/statisticsTop3.png" alt="">
             <div class="rightBg">
                 <h2>32</h2>
                 <h3>平台教室总数</h3>
@@ -81,7 +81,7 @@
         <div class="listTable">
             <el-table
                 :data="tableData"
-                style="width: 1664px"
+                style="width: 1644px"
                 >
                 <el-table-column
                 fixed
@@ -143,8 +143,12 @@
                 label="操作"
                 width="100">
                 <template slot-scope="scope">
-                    <el-button @click="handleClick(scope.row)" type="text" size="small">查看</el-button>
-                    <el-button type="text" size="small">编辑</el-button>
+                    <el-button @click="handleClick(scope.row)" type="text" size="small"> 
+                    <svg class="icon" aria-hidden="true" style="width:13px;height:12px">
+                        <use xlink:href="#iconguanli"></use>
+                    </svg>
+                     管理
+                    </el-button>
                 </template>
                 </el-table-column>
             </el-table>
@@ -248,7 +252,12 @@ watch: {},
 methods: {
     addPlatform(){
         this.$router.push({path : 'platformMange/addPlatform'})
+    },
+    handleClick(){
+        console.log(1);
+        this.$router.push({path  : 'platformMange/platformDetail'})
     }
+
 
 },
 //生命周期 - 创建完成（可以访问当前this实例）
@@ -271,9 +280,10 @@ activated() {}, //如果页面有keep-alive缓存功能，这个函数会触发
 //@import url(); 引入公共css类
 <style lang='scss' scoped>
 @import "../../../assets/style/mixin";
-.listWrap{
+.plalistWrap{
     height: 100%;
-    padding: 0 32px 0 25px;
+    padding-left: 25px;
+    padding-right: 32px;
     background-color: #F1F2F6;
     overflow: hidden;
     .statisticsOne{
@@ -314,6 +324,12 @@ activated() {}, //如果页面有keep-alive缓存功能，这个函数会触发
             .img1{
                 @include wh(58px,66px);
             }
+            .img2{
+                @include wh(58px,47px);
+            }
+            .img3{
+                @include wh(67px,51px);
+            }
             .rightBg{
                 h2{
                     @include font(24px,#636363)
@@ -336,6 +352,7 @@ activated() {}, //如果页面有keep-alive缓存功能，这个函数会触发
         }
     }
     .listMain{
+        overflow: hidden;
         height: 602px;
         background-color: #FCFCFD;
         margin-top: 19px;

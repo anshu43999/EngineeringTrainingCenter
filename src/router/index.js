@@ -46,10 +46,23 @@ const routes = [
             },
 
             {
-                path : 'platformMange/teatherTeam',
-                name : '平台列表/平台指导教师团队管理',
+                path : 'platformMange/platformDetail',
+                name : '平台列表/平台详情',
+                component : ()=>import('../pages/scPlatform/platformManage/platformDetail')
+            },
+            {
+                path : 'platformMange/platformDetail/teatherTeam',
+                name : '平台列表/平台详情/平台指导教师团队管理',
                 component : ()=>import('../pages/scPlatform/platformManage/teatherTeam')
-            }
+            },
+
+            {
+                path : 'platformMange/platformDetail/platformEdit',
+                name : '平台列表/平台信息管理/平台信息编辑',
+                component : ()=>import('../pages/scPlatform/platformManage/platformEdit')
+            },
+
+            
         ]
     },
 ]

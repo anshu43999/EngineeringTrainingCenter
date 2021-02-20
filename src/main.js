@@ -10,6 +10,7 @@ import '../src/assets/font/iconfont.css'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 
+import '../src/assets/font/iconfont.js';
 
 
 Vue.config.productionTip = false
