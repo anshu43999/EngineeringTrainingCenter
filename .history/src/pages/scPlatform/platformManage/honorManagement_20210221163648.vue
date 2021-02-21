@@ -34,7 +34,6 @@
     <!--  荣誉-->
     <div class="honor-list">
       <div class="honor-list-item" v-for="item in honorList" :key="item.id">
-        <!-- 荣誉名称 -->
         <div class="honor-title">
           <i class="iconfont iconbianji4"></i>
           <p>{{item.name}}</p>
@@ -43,23 +42,7 @@
         <div class="honor-img">
           <img :src="item.url" alt="">
         </div>
-        <!-- 团队和获奖时间 -->
-        <div class="honor-other-info">
-          {{item.team}}----{{item.time}}
-        </div>
       </div>
-    </div>
-    <!-- 分页 -->
-    <div class="pagination">
-      <el-pagination
-        @size-change="handleSizeChange"
-        @current-change="handleCurrentChange"
-        :current-page="currentPage4"
-        :page-sizes="[100, 200, 300, 400]"
-        :page-size="100"
-        layout="total, sizes, prev, pager, next, jumper"
-        :total="400">
-      </el-pagination>
     </div>
   </div>
 </template>
@@ -76,59 +59,49 @@ export default {
       honorList: [
         {
           id: 1,
-          url: require("../../../assets/image/scPlatform/platformManage/honor.png"),
+          url: require('../../../assets/image/scPlatform/platformManage/honor.png'),
           name: "*****荣誉",
           team: "孜孜不倦团队",
           time: "2020/0901",
         },
         {
           id: 2,
-          url: require("../../../assets/image/scPlatform/platformManage/honor.png"),
+          url: require('../../../assets/image/scPlatform/platformManage/honor.png'),
           name: "*****荣誉",
           team: "孜孜不倦团队",
           time: "2020/0901",
         },
         {
           id: 3,
-          url: require("../../../assets/image/scPlatform/platformManage/honor.png"),
+          url: require('../../../assets/image/scPlatform/platformManage/honor.png'),
           name: "*****荣誉",
           team: "孜孜不倦团队",
           time: "2020/0901",
         },
         {
           id: 4,
-          url: require("../../../assets/image/scPlatform/platformManage/honor.png"),
+          url: require('../../../assets/image/scPlatform/platformManage/honor.png'),
           name: "*****荣誉",
           team: "孜孜不倦团队",
           time: "2020/0901",
         },
         {
           id: 5,
-          url: require("../../../assets/image/scPlatform/platformManage/honor.png"),
+          url: require('../../../assets/image/scPlatform/platformManage/honor.png'),
           name: "*****荣誉",
           team: "孜孜不倦团队",
           time: "2020/0901",
         },
         {
           id: 6,
-          url: require("../../../assets/image/scPlatform/platformManage/honor.png"),
+          url: require('../../../assets/image/scPlatform/platformManage/honor.png'),
           name: "*****荣誉",
           team: "孜孜不倦团队",
           time: "2020/0901",
         },
       ],
-      currentPage4:4,
     };
   },
-  methods:{
-    //  分页
-    handleSizeChange(val) {
-      console.log(`每页 ${val} 条`);
-    },
-    handleCurrentChange(val) {
-      console.log(`当前页: ${val}`);
-    },
-  }
 };
 </script>
 
@@ -179,7 +152,6 @@ export default {
       ::v-deep .el-button {
         height: 100%;
         line-height: 14px;
-        border-color:#409eff
       }
     }
   }
@@ -188,7 +160,6 @@ export default {
     padding: 25px 27px;
     @include flex(space-between);
     flex-wrap: wrap;
-    border-bottom: $border;
 
     .honor-list-item {
       @include wh(290px, 282px);
@@ -201,39 +172,24 @@ export default {
         padding: 15px;
         border-bottom: $border;
 
-        .iconbianji4 {
+        .iconbianji4{
           color: #0590df;
           float: left;
         }
 
-        p {
+        p{
           float: right;
-          @include font(14px, #333);
+          @include font(14px,#333);
         }
       }
 
-      .honor-img {
+      .honor-img{
         height: 196px;
 
-        img {
-          @include wh(100%, 100%);
+        img{
+          @include wh(100%,100%);
         }
       }
-
-      .honor-other-info {
-        line-height: 44px;
-        @include font(14px, #666, center);
-      }
-    }
-  }
-
-  .pagination{
-    height: 58px;
-    text-align: center;
-    line-height: 58px;
-
-    ::v-deep .el-pagination *{
-      line-height: 58px;
     }
   }
 }

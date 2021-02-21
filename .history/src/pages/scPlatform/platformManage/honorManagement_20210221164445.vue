@@ -179,7 +179,6 @@ export default {
       ::v-deep .el-button {
         height: 100%;
         line-height: 14px;
-        border-color:#409eff
       }
     }
   }
@@ -228,13 +227,7 @@ export default {
   }
 
   .pagination{
-    height: 58px;
-    text-align: center;
-    line-height: 58px;
-
-    ::v-deep .el-pagination *{
-      line-height: 58px;
-    }
+    height: ;
   }
 }
 </style>

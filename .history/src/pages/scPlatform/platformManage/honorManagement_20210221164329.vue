@@ -61,7 +61,6 @@
         :total="400">
       </el-pagination>
     </div>
-  </div>
 </template>
 
 <script>
@@ -120,15 +119,6 @@ export default {
       currentPage4:4,
     };
   },
-  methods:{
-    //  分页
-    handleSizeChange(val) {
-      console.log(`每页 ${val} 条`);
-    },
-    handleCurrentChange(val) {
-      console.log(`当前页: ${val}`);
-    },
-  }
 };
 </script>
 
@@ -179,7 +169,6 @@ export default {
       ::v-deep .el-button {
         height: 100%;
         line-height: 14px;
-        border-color:#409eff
       }
     }
   }
@@ -224,16 +213,6 @@ export default {
         line-height: 44px;
         @include font(14px, #666, center);
       }
-    }
-  }
-
-  .pagination{
-    height: 58px;
-    text-align: center;
-    line-height: 58px;
-
-    ::v-deep .el-pagination *{
-      line-height: 58px;
     }
   }
 }

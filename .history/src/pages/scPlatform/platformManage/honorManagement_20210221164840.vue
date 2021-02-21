@@ -179,7 +179,6 @@ export default {
       ::v-deep .el-button {
         height: 100%;
         line-height: 14px;
-        border-color:#409eff
       }
     }
   }

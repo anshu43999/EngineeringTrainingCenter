@@ -70,6 +70,11 @@ const routes = [
                 name:'平台列表/大数据与人工智能创意设计双创平台/平台学期计划管理/学期计划详情',
                 component : ()=>import('../pages/scPlatform/platformManage/semesterPlanDetails')
             },
+            {
+                path: 'platformMange/honorManagement',
+                name:'平台列表/大数据与人工智能创意设计双创平台/平台荣誉管理',
+                component : ()=>import('../pages/scPlatform/platformManage/honorManagement')
+            },
         ]
     },
 ]
