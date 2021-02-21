@@ -60,6 +60,16 @@ const routes = [
                 name:'平台列表/大数据与人工智能创意设计双创平台/平台学期计划管理',
                 component : ()=>import('../pages/scPlatform/platformManage/termPlanManagement')
             },
+            {
+                path: 'platformMange/termPlanManagement/newSemesterPlan',
+                name:'平台列表/大数据与人工智能创意设计双创平台/平台学期计划管理/新增平台学期计划',
+                component : ()=>import('../pages/scPlatform/platformManage/newSemesterPlan')
+            },
+            {
+                path: 'platformMange/termPlanManagement/semesterPlanDetails',
+                name:'平台列表/大数据与人工智能创意设计双创平台/平台学期计划管理/学期计划详情',
+                component : ()=>import('../pages/scPlatform/platformManage/semesterPlanDetails')
+            },
         ]
     },
 ]
