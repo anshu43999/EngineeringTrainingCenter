@@ -70,6 +70,21 @@ const routes = [
                 name:'平台列表/大数据与人工智能创意设计双创平台/平台学期计划管理',
                 component : ()=>import('../pages/scPlatform/platformManage/termPlanManagement')
             },
+            {
+                path: 'platformMange/platformDetail/termPlanManagement/newSemesterPlan',
+                name:'平台列表/大数据与人工智能创意设计双创平台/平台学期计划管理/新增平台学期计划',
+                component : ()=>import('../pages/scPlatform/platformManage/newSemesterPlan')
+            },
+            {
+                path: 'platformMange/platformDetail/termPlanManagement/semesterPlanDetails',
+                name:'平台列表/大数据与人工智能创意设计双创平台/平台学期计划管理/学期计划详情',
+                component : ()=>import('../pages/scPlatform/platformManage/semesterPlanDetails')
+            },
+            {
+                path: 'platformMange/platformDetail/honorManagement',
+                name:'平台列表/大数据与人工智能创意设计双创平台/平台荣誉管理',
+                component : ()=>import('../pages/scPlatform/platformManage/honorManagement')
+            },
             
 
             {
@@ -83,6 +98,9 @@ const routes = [
                 name : '平台列表/平台信息管理/平台信息编辑',
                 component : ()=>import('../pages/scPlatform/platformManage/platformEdit')
             },
+            
+            
+            
             
            
 

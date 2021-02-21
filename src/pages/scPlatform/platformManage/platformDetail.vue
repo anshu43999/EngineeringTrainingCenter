@@ -150,7 +150,7 @@ return {
             title3 : '上次编辑时间：2021.09.01',
         },
         {
-            path : '',
+            path : 'platformDetail/honorManagement',
             title1 : '平台荣誉管理',
             title2 : '今年新增荣誉：2',
             title3 : '上次编辑时间：2021.09.01',
@@ -329,7 +329,7 @@ activated() {}, //如果页面有keep-alive缓存功能，这个函数会触发
         }
         .showTwo-box:nth-child(4){
             .showTwo-box-left{
-                @include backgroundImage('../../../assets/image/scPlatform/platformDetail/honor.png',center,auto);
+                @include backgroundImage('../../../assets/image/scPlatform/platformDetail/honor1.png',center,auto);
             }
         }
         .showTwo-box:nth-child(5){

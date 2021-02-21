@@ -205,9 +205,10 @@ export default {
     border-bottom: solid 1px #e5e6ef;
     line-height: 56px;
     padding: 0 25px;
+    @include font(14px,#444);
 
     svg {
-      @include wh(18px, 100%);
+      @include wh(16px, 100%);
       float: left;
       margin-right: 7px;
     }
@@ -226,9 +227,10 @@ export default {
     .content-title {
       height: 28px;
       line-height: 28px;
+      @include font(14px,#444);
 
       .iconjinqi {
-        font-size: 28px;
+        font-size: 22px;
         float: left;
         color: #409eff;
       }

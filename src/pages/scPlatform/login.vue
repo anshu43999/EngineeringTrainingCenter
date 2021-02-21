@@ -68,7 +68,7 @@ watch: {},
 //方法集合
 methods: {
     submit(){
-        this.$router.push({path : '/entrance'});
+        this.$router.push({path : '/entrance/scPlatform/index'});
     }
 
 },

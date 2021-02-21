@@ -85,7 +85,7 @@
         <div class="listTable">
             <el-table
                 :data="tableData"
-                style="width: 1644px"
+                style="width: 1640px"
                 :header-cell-style="{background:'#FFF9ED'}"
                 :row-class-name="tableRowClassName"
                 >
@@ -246,7 +246,10 @@ return {
             roomname: '房间名称',
             roomYWname: '房间英文名称',
         },
-    ]
+    ],
+    input:'',
+    currentPage4 :0,
+
 
 };
 },
@@ -268,7 +271,10 @@ methods: {
           return '';
         } 
         return 'warning-row';
-      }
+      },
+    handleSizeChange(){
+
+    }
 
 
 },
