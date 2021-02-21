@@ -15,8 +15,8 @@
                 <router-view></router-view>
             </div>
         </div>
-        
-       
+
+
     </div>
 
 </div>
@@ -85,10 +85,11 @@ activated() {}, //如果页面有keep-alive缓存功能，这个函数会触发
             .main{
                 @include wh(100%,calc(100% - 48px));
                 background-color: #F1F2F6;
+              overflow: scroll;
             }
         }
-        
-        
+
+
     }
 }
 

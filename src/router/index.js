@@ -12,7 +12,7 @@ Router.prototype.push = function push(location) {
 
 Vue.use(Router);
 
-const routes = [ 
+const routes = [
     {
         path: '/',
         redirect: '/login',
@@ -51,9 +51,31 @@ const routes = [
                 component : ()=>import('../pages/scPlatform/platformManage/platformDetail')
             },
             {
+                path: 'platformMange/platformDetail/basicPlatformInformation',
+                name:'平台列表/平台信息管理',
+                component : ()=>import('../pages/scPlatform/platformManage/basicPlatformInformation')
+            },
+            {
+                path: 'platformMange/platformDetail/basicPlatformInformation/platformEdit',
+                name:'平台列表/平台信息管理',
+                component : ()=>import('../pages/scPlatform/platformManage/platformEdit')
+            },
+            {
                 path : 'platformMange/platformDetail/teatherTeam',
                 name : '平台列表/平台详情/平台指导教师团队管理',
                 component : ()=>import('../pages/scPlatform/platformManage/teatherTeam')
+            },
+            {
+                path: 'platformMange/platformDetail/termPlanManagement',
+                name:'平台列表/大数据与人工智能创意设计双创平台/平台学期计划管理',
+                component : ()=>import('../pages/scPlatform/platformManage/termPlanManagement')
+            },
+            
+
+            {
+                path: 'platformMange/platformDetail/equipment',
+                name:'平台列表/大数据与人工智能创意设计双创平台/平台设备管理',
+                component : ()=>import('../pages/scPlatform/platformManage/equipment')
             },
 
             {
@@ -61,6 +83,8 @@ const routes = [
                 name : '平台列表/平台信息管理/平台信息编辑',
                 component : ()=>import('../pages/scPlatform/platformManage/platformEdit')
             },
+            
+           
 
             
         ]

@@ -132,7 +132,7 @@ data() {
 return {
     platformData : [
         {
-            path : '',
+            path : 'platformDetail/basicPlatformInformation',
             title1 : '平台信息管理（平台介绍）',
             title2 : '信息完善度：80%',
             title3 : '上次编辑时间：2021.09.01',
@@ -144,7 +144,7 @@ return {
             title3 : '上次编辑时间：2021.09.01',
         },
         {
-            path : '',
+            path : 'platformDetail/termPlanManagement',
             title1 : '平台学期课程计划管理',
             title2 : '本学期平台课程总数：4门',
             title3 : '上次编辑时间：2021.09.01',
@@ -156,7 +156,7 @@ return {
             title3 : '上次编辑时间：2021.09.01',
         },
         {
-            path : '',
+            path : 'platformDetail/equipment',
             title1 : '平台设备、资源管理',
             title2 : '今年新增荣誉：2',
             title3 : '次编辑时间：2021.09.01',

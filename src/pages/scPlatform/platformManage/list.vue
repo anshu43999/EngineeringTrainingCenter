@@ -47,7 +47,7 @@
 
         <el-input v-model="input" placeholder="平台名称/平台负责人"></el-input>
 
-        
+
         <el-select v-model="value" placeholder="所属学院">
             <el-option
             v-for="item in options"
@@ -66,15 +66,19 @@
             </el-option>
         </el-select>
 
-        <el-button style="margin-left:45px" size='mini' type="primary">查询</el-button>
+        <el-button style="margin-left:45px" size='mini' type="primary">
+            <i style="font-size:11px" class="iconfont iconsousuo"></i>
+            查询</el-button>
 
-        <el-button size='mini'>重置</el-button>
+        <el-button size='mini'>
+            <i style="font-size:11px" class="iconfont iconcs-fh-1 "></i>
+            重置</el-button>
     </div>
 
     <div class="listMain">
         <div class="listMainTop">
-            <el-button style="margin-left:45px" size='mini' type="primary" @click="addPlatform">新增平台</el-button>
-            <el-button size='mini' style="margin-left:30px">导出</el-button>
+            <el-button style="margin-left:45px" size='mini' type="primary" @click="addPlatform"> <i style="font-size:13px" class="iconfont icondaoru"></i> 新增平台</el-button>
+            <el-button size='mini' style="margin-left:30px"> <i style="font-size:13px" class="iconfont icondaochu"></i> 导出</el-button>
         </div>
 
 
@@ -82,12 +86,14 @@
             <el-table
                 :data="tableData"
                 style="width: 1644px"
+                :header-cell-style="{background:'#FFF9ED'}"
+                :row-class-name="tableRowClassName"
                 >
                 <el-table-column
                 fixed
                 type="selection"
                 width="55">
-                </el-table-column>               
+                </el-table-column>
                 <el-table-column
                     prop="xh"
                     label="序号"
@@ -136,7 +142,7 @@
                     >
                 </el-table-column>
 
-        
+
 
                 <el-table-column
                 fixed="right"
@@ -256,7 +262,13 @@ methods: {
     handleClick(){
         console.log(1);
         this.$router.push({path  : 'platformMange/platformDetail'})
-    }
+    },
+    tableRowClassName({row, rowIndex}) {
+        if (rowIndex%2 ) {
+          return '';
+        } 
+        return 'warning-row';
+      }
 
 
 },
@@ -281,6 +293,13 @@ activated() {}, //如果页面有keep-alive缓存功能，这个函数会触发
 <style lang='scss' scoped>
 @import "../../../assets/style/mixin";
 .plalistWrap{
+    ::v-deep .el-table .warning-row {
+        background: #FAFDFF;
+    }
+
+    ::v-deep .el-table .success-row {
+        background: #ffffff;
+    }
     height: 100%;
     padding-left: 25px;
     padding-right: 32px;
@@ -365,6 +384,19 @@ activated() {}, //如果页面有keep-alive缓存功能，这个函数会触发
             margin: 0 24px;
             border: solid 1px #e5e6ef;
             // overflow: hidden;
+            ::v-deep .el-table__header-wrapper{
+                height: 50px;
+            }
+            ::v-deep .el-table__header{
+                height: 50px;
+                thead{
+                    tr{
+                        height: 50px;
+                        background-color: #fff9ed;
+                    }
+                }
+            }
+
         }
         .block{
             @include flex();
@@ -375,6 +407,7 @@ activated() {}, //如果页面有keep-alive缓存功能，这个函数会触发
     }
 
 }
+
 
 
 </style>

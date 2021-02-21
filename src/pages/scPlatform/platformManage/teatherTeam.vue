@@ -26,26 +26,36 @@
                 </el-option>
             </el-select>
 
-            <el-button style="margin-left:45px" size='mini' type="primary">查询</el-button>
+          
 
-            <el-button size='mini'>重置</el-button>
+            <el-button style="margin-left:45px" size='mini' type="primary">
+            <i style="font-size:11px" class="iconfont iconsousuo"></i>
+            查询</el-button>
+
+            <el-button size='mini'>
+                <i style="font-size:11px" class="iconfont iconcs-fh-1 "></i>
+            重置</el-button>
 
         </div>
         <div class="statistics-right">
-            <el-button style="margin-right:40px"  size='mini' type="primary">新增指导教师团队成员</el-button>
+            <el-button style="margin-right:40px"  size='mini' type="primary">
+                <i class="iconfont iconxinzengrenyuan"></i>
+                新增指导教师团队成员</el-button>
         </div>
     </div>
 
     <div class="teacherShow">
-        <div class="teacherSingle">
-            <img src="" alt="">
-            <h2>杨秋翔</h2>
-            <h3>13803492618</h3>
+        <div class="teacherSingle" v-for="(item,index) in teacherData" :key="index">
+            <!-- <img src="../../../assets/image/scPlatform/teacher/teacher3.png" alt=""> -->
+            <img :src="item['pic']" alt="">
+
+            <h2>{{item['name']}}</h2>
+            <h3>{{item['tel']}}</h3>
             <div class="info">
-                <span>专业1专业1</span>
-                <span>职称1职称1</span>
+                <span>{{item['major']}}</span>
+                <span>{{item['rank']}}</span>
             </div>
-            <div class="position">平台负责人</div>
+            <div :class="[item['authority']===1?'positionOne':item['authority']===2?'positionTwo':'positionThree'    ,'position']">平台负责人</div>
         </div>
 
     </div>
@@ -62,6 +72,72 @@ components: {},
 data() {
 //这里存放数据
 return {
+    teacherData : [
+        {
+            pic : 'static/img/teacher/teacher1.png',
+            name : '杨秋翔' ,
+            tel : '13803492618',
+            major : '专业1',
+            rank : '职称',
+            authority : 1,
+            author : '平台负责人'
+        },
+        {
+            pic : 'static/img/teacher/teacher1.png',
+            name : '赵利辉' ,
+            tel : '13803492618',
+            major : '专业1',
+            rank : '职称',
+            authority : 2,
+            author : '安全负责人'
+        },
+        {
+            pic : 'static/img/teacher/teacher2.png',
+            name : '赵利辉' ,
+            tel : '13803492618',
+            major : '专业1',
+            rank : '职称',
+            authority : 2,
+            author : '安全负责人'
+        },
+        {
+            pic : 'static/img/teacher/teacher3.png',
+            name : '赵利辉' ,
+            tel : '13803492618',
+            major : '专业1',
+            rank : '职称',
+            authority : 3,
+            author : '平台成员'
+        },
+        {
+            pic : 'static/img/teacher/teacher3.png',
+            name : '赵利辉' ,
+            tel : '13803492618',
+            major : '专业1',
+            rank : '职称',
+            authority : 3,
+            author : '平台成员'
+        },
+        {
+            pic : 'static/img/teacher/teacher3.png',
+            name : '赵利辉' ,
+            tel : '13803492618',
+            major : '专业1',
+            rank : '职称',
+            authority : 3,
+            author : '平台成员'
+        },
+        {
+            pic : 'static/img/teacher/teacher3.png',
+            name : '赵利辉' ,
+            tel : '13803492618',
+            major : '专业1',
+            rank : '职称',
+            authority : 3,
+            author : '平台成员'
+        },
+        
+    ]
 
 };
 },
@@ -138,13 +214,16 @@ activated() {}, //如果页面有keep-alive缓存功能，这个函数会触发
         width: 100%;
         flex: 1;
         overflow: hidden;
-        padding: 0 64px;
+        padding: 0 0 0 64px;
+        @include flex(flex-start,flex-start);
+        flex-wrap: wrap;
         .teacherSingle{
             width: 260px;
             @include flex(flex-start,center,column);
             background-color: #ffffff;
             border: solid 1px #dddddd;
             margin-top: 30px;
+            margin-right: 65px;
             img{
                 @include wh(140px,140px);
                 margin-top: 26px;
@@ -152,17 +231,20 @@ activated() {}, //如果页面有keep-alive缓存功能，这个函数会触发
             h2{
                 width: 100%;
                 @include font(14px,#333333,center);
+                line-height: 14px;
                 margin-top : 12px;
             }
             h3{
                 width: 100%;
                 @include font(14px,#333333,center);
+                line-height: 12px;
                 margin-top : 10px;
             }
             .info{
                 width: 100%;
-                margin-top: 25px;
+                margin-top: 20px;
                 @include font(14px);
+                line-height: 14px;
                 @include flex(space-between);
                 padding: 0 20px;
             
@@ -176,6 +258,16 @@ activated() {}, //如果页面有keep-alive缓存功能，这个函数会触发
                 background-color: #ffbf3f;
                 border: solid 1px #dddddd;
             }
+            .positionOne{
+                background-color: #f66568;
+            }
+            .positionTwo{
+                background-color: #ffbf3f;
+            }
+            .positionThree{
+                background-color: #4ccfc9;
+            }
+            
 
 
         }
