@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "echarts": "^4.9.0",
     "vue": "^2.6.11",
     "vue-router": "^3.5.1",
     "vue-style-loader": "^4.1.2",
@@ -29,7 +28,8 @@
     "scss": "^0.2.4",
     "scss-loader": "^0.0.1",
     "vue-template-compiler": "^2.6.11",
-    "echarts": "^4.8.0"
+    "echarts": "^4.8.0",
+    "wangeditor": "^4.6.6"
   },
   "eslintConfig": {
     "root": true,
