@@ -162,7 +162,7 @@ return {
             title3 : '次编辑时间：2021.09.01',
         },
         {
-            path : '',
+            path : 'platformDetail/dataStatistics',
             title1 : '平台数据统计分析',
             title2 : '现统计学期：2021年第一学期',
             // title3 : '次编辑时间：2021.09.01',

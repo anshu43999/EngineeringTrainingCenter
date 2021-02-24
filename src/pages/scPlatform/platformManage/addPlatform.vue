@@ -225,9 +225,14 @@ activated() {}, //如果页面有keep-alive缓存功能，这个函数会触发
 <style lang='scss' scoped>
 @import "../../../assets/style/mixin";
 .addPlatform{
-background-color: #F1F2F6;
-overflow: hidden;
-height: 100%;
+    background-color: #F1F2F6;
+    overflow: hidden;
+    height: 100%;
+    @include backgroundImage('../../../assets/image/commonBg/addPlatform.png');
+    background-size: 573px 546px;
+    background-position: 100% 99%;
+
+
 }
 .addPlatformMain{
     @include wh(1000px,798px);

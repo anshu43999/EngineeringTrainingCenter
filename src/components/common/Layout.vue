@@ -10,7 +10,7 @@
     <div  class="content">
         <navigation></navigation>
         <div class="contentRight">
-            <breadCrumb ></breadCrumb>
+            <breadCrumb  :breadcrumb='breadcrumb' ></breadCrumb>
             <div class="main">
                 <router-view></router-view>
             </div>
@@ -39,6 +39,10 @@ components: {
 data() {
 //这里存放数据
 return {
+    breadcrumb: {
+        search: false,
+        searching: "",
+      },
 
 
 };

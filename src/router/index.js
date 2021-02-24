@@ -31,71 +31,78 @@ const routes = [
         children:[
             {
                 path : 'index',
-                name : '',
+                name : '首页',
                 component : ()=>import('../pages/scPlatform/index')
             },
             {
                 path : 'platformMange',
-                name : '平台列表',
+                name : '平台管理/平台列表',
                 component : ()=>import('../pages/scPlatform/platformManage/list')
             },
             {
                 path : 'platformMange/addPlatform',
-                name : '平台列表/新增平台',
+                name : '平台管理/平台列表/新增平台',
                 component : ()=>import('../pages/scPlatform/platformManage/addPlatform')
             },
 
             {
                 path : 'platformMange/platformDetail',
-                name : '平台列表/平台详情',
+                name : '平台管理/平台列表/平台详情',
                 component : ()=>import('../pages/scPlatform/platformManage/platformDetail')
             },
             {
                 path: 'platformMange/platformDetail/basicPlatformInformation',
-                name:'平台列表/平台信息管理',
+                name:'平台管理/平台列表/平台详情/平台信息管理',
                 component : ()=>import('../pages/scPlatform/platformManage/basicPlatformInformation')
             },
             {
                 path: 'platformMange/platformDetail/basicPlatformInformation/platformEdit',
-                name:'平台列表/平台信息管理',
+                name:'平台管理/平台列表/平台详情/平台信息管理/平台信息编辑',
                 component : ()=>import('../pages/scPlatform/platformManage/platformEdit')
             },
             {
                 path : 'platformMange/platformDetail/teatherTeam',
-                name : '平台列表/平台详情/平台指导教师团队管理',
+                name : '平台管理/平台列表/平台详情/平台指导教师团队管理',
                 component : ()=>import('../pages/scPlatform/platformManage/teatherTeam')
             },
             {
                 path: 'platformMange/platformDetail/termPlanManagement',
-                name:'平台列表/大数据与人工智能创意设计双创平台/平台学期计划管理',
+                name:'平台管理/平台列表/平台详情/平台学期计划管理',
                 component : ()=>import('../pages/scPlatform/platformManage/termPlanManagement')
             },
             {
                 path: 'platformMange/platformDetail/termPlanManagement/newSemesterPlan',
-                name:'平台列表/大数据与人工智能创意设计双创平台/平台学期计划管理/新增平台学期计划',
+                name:'平台管理/平台列表/平台详情/平台学期计划管理/新增平台学期计划',
                 component : ()=>import('../pages/scPlatform/platformManage/newSemesterPlan')
             },
             {
                 path: 'platformMange/platformDetail/termPlanManagement/semesterPlanDetails',
-                name:'平台列表/大数据与人工智能创意设计双创平台/平台学期计划管理/学期计划详情',
+                name:'平台管理/平台列表/平台详情/平台学期计划管理/学期计划详情',
                 component : ()=>import('../pages/scPlatform/platformManage/semesterPlanDetails')
             },
             {
                 path: 'platformMange/platformDetail/honorManagement',
-                name:'平台列表/大数据与人工智能创意设计双创平台/平台荣誉管理',
+                name:'平台管理/平台列表/平台详情/平台荣誉管理',
                 component : ()=>import('../pages/scPlatform/platformManage/honorManagement')
             },
             
 
             {
                 path: 'platformMange/platformDetail/equipment',
-                name:'平台列表/大数据与人工智能创意设计双创平台/平台设备管理',
+                name:'平台管理/平台列表/平台详情/平台设备管理',
                 component : ()=>import('../pages/scPlatform/platformManage/equipment')
             },
+            // dataStatistics
+            {
+                path: 'platformMange/platformDetail/dataStatistics',
+                name:'平台管理/平台列表/平台详情/平台数据统计',
+                component : ()=>import('../pages/scPlatform/platformManage/dataStatistics')
+            },
+
 
             {
                 path : 'platformMange/platformDetail/platformEdit',
-                name : '平台列表/平台信息管理/平台信息编辑',
+                name : '平台管理/平台列表/平台信息管理/平台信息编辑',
                 component : ()=>import('../pages/scPlatform/platformManage/platformEdit')
             },
             

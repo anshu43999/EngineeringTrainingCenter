@@ -65,7 +65,7 @@
 <script>
 //这里可以导入其他文件（比如：组件，工具js，第三方插件js，json文件，图片文件等等）
 //例如：import 《组件名称》 from '《组件路径》';
-import '../../../assets/style/elementcommon.scss'
+// import '../../../assets/style/elementcommon.scss'
 export default {
 //import引入的组件需要注入到对象中才能使用
 components: {},
@@ -196,6 +196,16 @@ activated() {}, //如果页面有keep-alive缓存功能，这个函数会触发
         .statistics-left{
             @include flex();
             height: 80px;
+            ::v-deep .el-input{
+                @include wh(200px,30px);
+            }
+            ::v-deep .el-input__inner{
+                 @include wh(200px,30px);
+
+            }
+            ::v-deep .el-input__icon{
+                line-height: 30px;
+            }
         }
 
         @include flex(space-between);
