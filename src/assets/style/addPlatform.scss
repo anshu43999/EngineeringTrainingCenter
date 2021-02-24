@@ -1,16 +1,18 @@
-.el-input{
-    width: 400px;
-    height: 42px;
-    .el-input__inner{
+.addPlatform{
+    .el-input{
+        width: 400px;
         height: 42px;
+        .el-input__inner{
+            height: 42px;
+        }
     }
-}
 
-#multiple{
-    .el-select{
-        width: 200px;
-        .el-input {
+    #multiple{
+        .el-select{
             width: 200px;
+            .el-input {
+                width: 200px;
+            }
         }
     }
 }
