@@ -1,0 +1,95 @@
+@import "./mixin";
+
+#CourseDetail,#SemesterPlanDetail {
+  width: calc(100% - 50px);
+  margin: 25px;
+  background-color: rgba(255, 255, 255, .8);
+  box-shadow: 0px 1px 4px 0px rgba(43, 57, 128, 0.19);
+  border: solid 1px #e5e6ef;
+  opacity: 0.8;
+  color: #444;
+
+  .title {
+    @include wh(100%, 56px);
+    border-bottom: solid 1px #e5e6ef;
+    line-height: 56px;
+    padding: 0 25px;
+    @include font(14px, #444);
+
+    svg {
+      @include wh(16px, 100%);
+      float: left;
+      margin-right: 7px;
+    }
+
+    ::v-deep .el-button {
+      float: right;
+      height: 30px;
+      transform: translateY(calc(50% - 3px));
+      letter-spacing: 2px;
+    }
+  }
+
+  .content-body {
+    padding: 24px 40px;
+
+    .content-title {
+      height: 28px;
+      line-height: 28px;
+      @include font(14px, #444);
+
+      .iconjinqi {
+        font-size: 22px;
+        float: left;
+        color: #409eff;
+      }
+    }
+
+    .content {
+      margin-bottom: 40px;
+
+      table {
+        cellspacing: 1;
+        background: #ddd;
+        width: 100%;
+        margin-top: 16px;
+
+        .table-bg {
+          background-color: #f5fafd;
+          text-align: right;
+          color: #999;
+        }
+
+        .table-padding {
+          padding: 21px;
+        }
+
+        .table-center {
+          text-align: center;
+        }
+
+        .table-left {
+          text-align: left;
+        }
+
+        td {
+          background-color: #fff;
+          height: 40px;
+          padding: 0 9px;
+          @include font(12px, #333);
+          min-width: 150px;
+
+          .platform-name {
+            font-size: 14px;
+            color: #333;
+            margin-top: 13px;
+          }
+
+          img {
+            width: 101px;
+          }
+        }
+      }
+    }
+  }
+}

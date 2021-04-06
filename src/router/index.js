@@ -34,6 +34,7 @@ const routes = [
                 name : '首页',
                 component : ()=>import('../pages/scPlatform/index')
             },
+            //平台管理
             {
                 path : 'platformMange',
                 name : '平台管理/平台列表',
@@ -44,7 +45,6 @@ const routes = [
                 name : '平台管理/平台列表/新增平台',
                 component : ()=>import('../pages/scPlatform/platformManage/addPlatform')
             },
-
             {
                 path : 'platformMange/platformDetail',
                 name : '平台管理/平台列表/平台详情',
@@ -85,8 +85,6 @@ const routes = [
                 name:'平台管理/平台列表/平台详情/平台荣誉管理',
                 component : ()=>import('../pages/scPlatform/platformManage/honorManagement')
             },
-            
-
             {
                 path: 'platformMange/platformDetail/equipment',
                 name:'平台管理/平台列表/平台详情/平台设备管理',
@@ -98,20 +96,56 @@ const routes = [
                 name:'平台管理/平台列表/平台详情/平台数据统计',
                 component : ()=>import('../pages/scPlatform/platformManage/dataStatistics')
             },
-
-
             {
                 path : 'platformMange/platformDetail/platformEdit',
                 name : '平台管理/平台列表/平台信息管理/平台信息编辑',
                 component : ()=>import('../pages/scPlatform/platformManage/platformEdit')
             },
-            
-            
-            
-            
-           
 
-            
+            // 课程管理
+            {
+                path : 'courseManage',
+                name : '课程管理',
+                component : ()=>import('../pages/scPlatform/courseManagement/List'),
+            },
+            {
+                path : 'courseManage/courseDetail',
+                name : '课程管理/课程详情',
+                component : ()=>import('../pages/scPlatform/courseManagement/CourseDetail'),
+            },
+            {
+                path : 'courseManage/addCourse',
+                name : '课程管理/新增课程',
+                component : ()=>import('../pages/scPlatform/courseManagement/CourseDetail'),
+            },
+            {
+                path : 'courseManage/editCourse',
+                name : '课程管理/课程编辑',
+                component : ()=>import('../pages/scPlatform/courseManagement/CourseDetail'),
+            },
+
+        // 学期管理
+
+            {
+                path : 'semesterPlanManage',
+                name : '学期计划管理',
+                component : ()=>import('../pages/scPlatform/semesterPlanManage/List'),
+            },
+           {
+                path : 'semesterPlanManage/semesterPlanDetail',
+                name : '学期计划管理/学期计划详情',
+                component : ()=>import('../pages/scPlatform/semesterPlanManage/SemesterPlanDetail'),
+            },
+            {
+                path : 'semesterPlanManage/addSemesterPlan',
+                name : '学期计划管理/新增学期计划',
+                component : ()=>import('../pages/scPlatform/semesterPlanManage/SemesterPlanDetail'),
+            },
+            {
+                path : 'semesterPlanManage/editSemesterPlan',
+                name : '学期计划管理/编辑学期计划',
+                component : ()=>import('../pages/scPlatform/semesterPlanManage/SemesterPlanDetail'),
+            }
         ]
     },
 ]
